@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="dashboard-page">
+        <header>
+            <h1>Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="ar-setup.html">AR Setup</a></li>
+                    <li><a href="subscription.html">Subscription</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="battery-section">
+            <div class="battery-gauge">
+                <div class="battery-level" style="--battery-level: 75%;">
+                    <span class="percentage">75%</span>
+                </div>
+            </div>
+            <p>Battery Level</p>
+        </section>
+
+        <section class="hazard-alerts">
+            <h2>Hazard Alerts</h2>
+            <div class="alerts-box">
+                <p class="alert">⚠️ Hazard Detected: Slippery Floor - 10:45 AM</p>
+                <p class="alert">🔥 Hazard Detected: High Temperature - 11:15 AM</p>
+            </div>
+        </section>
+
+        <section class="usage-stats">
+            <h2>Statistics</h2>
+            <div class="stats-container">
+                <div class="stat">
+                    <h3>Time in Use</h3>
+                    <p>4 hrs 32 mins</p>
+                </div>
+                <div class="stat">
+                    <h3>Alerts Triggered</h3>
+                    <p>15</p>
+                </div>
+                <div class="stat">
+                    <h3>Maintenance Due</h3>
+                    <p>Next in 5 days</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="ar-visual">
+            <h2>AR Glass Status</h2>
+            <div class="ar-model">
+                <img src="glass.gif" alt="AR Glass Model">
+            </div>
+            <p>Status: <span class="status connected">Connected</span></p>
+        </section>
+
+        <section class="actions">
+            <button class="action-btn">Start Session</button>
+            <button class="action-btn">View Logs</button>
+            <button class="action-btn">Update Settings</button>
+        </section>
+    </div>
+</body>
+</html>

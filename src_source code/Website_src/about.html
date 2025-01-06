@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .about-section h1 {
+            font-size: 2.5rem;
+            color: #1d1e4e;
+            margin-bottom: 20px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .about-grid img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1/1; /* Ensures 4x4 ratio */
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-grid p {
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.6;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="OK!Asaan Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="arglasses.html">AR Glass</a></li>
+                <li><a href="subscription.html">Subscription</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about-section">
+            <h1>About OK!Asaan</h1>
+            <div class="about-grid">
+                <!-- Placeholder for 4x4 Image -->
+                <img src="worker.png" alt="About Image">
+                <!-- Placeholder for Text -->
+                <h2>
+                    Welcome to OK!Asaan, where we revolutionize worker safety with cutting-edge AR technology. 
+                    Our mission is to create safer, more efficient workplaces by integrating augmented reality into daily operations. 
+                    With features like real-time hazard alerts and worker health monitoring, OK!Asaan is designed to enhance 
+                    safety and productivity in industrial environments.
+                </h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 OK!Asaan. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,357 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('background.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(29, 30, 78, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fcc14d;
+    font-weight: bold;
+}
+
+/* Hero Section Styling (Home, Dashboard, Profile) */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.animated-text {
+    font-size: 2.5rem;
+    color: #fcc14d;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('background.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(29, 30, 78, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: #fcc14d;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fcc14d;
+    font-weight: bold;
+}
+
+/* Battery Section Styling */
+.battery-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.battery-gauge {
+    background-color: #ccc;
+    border-radius: 10px;
+    width: 60%;
+    height: 30px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.battery-level {
+    background-color: #fcc14d;
+    height: 100%;
+    border-radius: 10px;
+    width: var(--battery-level);
+    position: relative;
+}
+
+.percentage {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Hazard Alerts Section */
+.hazard-alerts {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.alerts-box {
+    background-color: rgba(29, 30, 78, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.alert {
+    font-size: 1.2rem;
+    color: #fcc14d;
+}
+
+/* Usage Stats Section */
+.usage-stats {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stat {
+    padding: 20px;
+    background-color: rgba(29, 30, 78, 0.8);
+    border-radius: 10px;
+    width: 30%;
+    color: #fcc14d;
+}
+
+.stat h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* AR Glass Section */
+.ar-visual {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.ar-model img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.status {
+    font-weight: bold;
+    color: #fcc14d;
+}
+
+.status.connected {
+    color: #4caf50;
+}
+
+.status.disconnected {
+    color: #f44336;
+}
+
+/* Actions Section */
+.actions {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.action-btn {
+    background-color: #fcc14d;
+    color: white;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background-color: #102A71;
+}
+
+
+
+
+/* Profile Page Styling */
+.profile-content {
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(29, 30, 78, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+
+/* Profile Page Styling */
+.profile-content {
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(29, 30, 78, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.profile-picture-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fcc14d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.upload-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fcc14d;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.upload-button:hover {
+    background-color: #102A71;
+}
+
+.user-details {
+    margin-top: 30px;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.submit-button {
+    background-color: #fcc14d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #102A71;
+}
+/* Header Styling to match other pages */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(29, 30, 78, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 50px;  /* Keep logo size consistent with other pages */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fcc14d;
+    font-weight: bold;
+}

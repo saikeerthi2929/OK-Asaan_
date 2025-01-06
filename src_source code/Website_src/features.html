@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .feature-item {
+            text-align: center;
+            border: 2px solid #1d1e4e;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-item img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1/1; /* Ensures 4x4 ratio */
+            border-radius: 4px;
+            object-fit: cover;
+        }
+
+        .feature-title {
+            font-size: 1.2rem;
+            color: #1d1e4e;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="OK!Asaan Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="arglasses.html">AR Glass</a></li>
+                <li><a href="subscription.html">Subscription</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html" class="active">Features</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="features">
+            <h1>Key Features</h1>
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-item">
+                    <label for="scissor-lift">
+                        <img src="Scissor-Lift.jpg" id="scissor-lift" alt="Scissor Lifts">
+                    </label>
+                    <p class="feature-title">Scissor Lifts</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-item">
+                    <label for="pallet-truck">
+                        <img src="car.png" id="pallet-truck" alt="Pallet Trucks">
+                    </label>
+                    <p class="feature-title">Pallet Trucks</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-item">
+                    <label for="ingot-roll">
+                        <img src="roll.png" id="ingot-roll" alt="Ingot Rolls">
+                    </label>
+                    <p class="feature-title">Ingot Rolls</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-item">
+                    <label for="safety-helmet">
+                        <img src="helmet.png" id="safety-helmet" alt="Safety Helmet">
+                    </label>
+                    <p class="feature-title">Safety Helmet</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 OK!Asaan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
